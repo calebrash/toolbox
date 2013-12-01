@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>$$ test</title>
+</head>
+<body>
+    <div id="dd-test-1" class="dd-test" name="ntest"></div>
+    <div id="dd-test-2" class="dd-test"></div>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="dist/dd.js"></script>
+    <script>
+        $$.ready(function () {
+            console.log('doc   ', $$.doc,    $$.doc.length);
+            console.log('body  ', $$.body,   $$.body.length);
+            console.log('window', $$.window, $$.window.length);
+            console.log('id    ', $$.id('dd-test-1'),   $$.id('dd-test-1').length);
+            console.log('all   ', $$.all('#dd-test-1'), $$.all('#dd-test-1').length);
+            console.log('all   ', $$.all('.dd-test'),   $$.all('.dd-test').length);
+            console.log('one   ', $$.one('.dd-test'),   $$.one('.dd-test').length);
+            console.log('tag   ', $$.tag('div'),        $$.tag('div').length);
+            console.log('name  ', $$.name('ntest'),     $$.name('ntest').length);
+            console.log('className', $$.className('dd-test'), $$.className('dd-test').length);
+        });
+    </script>
+</body>
+</html>
