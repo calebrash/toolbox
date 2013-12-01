@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TicTacToe</title>
+    <style>
+        #game {
+            position: absolute;
+            top: 50%; left: 50%;
+            width: 165px;
+            margin: -100px 0 0 -80px;
+
+        }
+
+        #game a {
+            display: block;
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin: 0 5px 5px 0;
+            padding-top: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            border-radius: 25px;
+            text-align: center;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 2.0em;
+            font-weight: 100;
+            text-decoration: none;
+            color: #999;
+            overflow: hidden;
+        }
+
+        #game span {
+            display: block;
+            width: 100%;
+        }
+
+        #game a .x {
+            margin-top: -40px;
+            transition: margin 1s linear;
+        }
+
+        #game a .o {
+            margin-top: 40px;
+            transition: margin 1s linear;
+        }
+
+        #game .tile-X .x {
+            margin-top: 0;
+        }
+
+        #game .tile-O .o {
+            margin-top: 2px;
+        }
+
+        #game a:hover {
+            border-color: #999;
+        }
+
+        #game.done a {
+            opacity: 0.2;
+        }
+
+        #game .msg {
+            display: none;
+            float: left;
+            clear: left;
+            width: 100%;
+            margin: -110px 0 0 -15px;
+            padding: 15px;
+            background: #eee;
+            background: rgba(0,0,0,0.1);
+            text-align: center;
+            font-weight: 200;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        #game.done .msg {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="game"></div>
+    <script src="tic.js"></script>
+    <script src="test.js"></script>
+</body>
+</html>
