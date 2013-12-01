@@ -26,9 +26,9 @@ console.log(a.natural(b)); // => "less than a minute ago"
 - 1500s: about 20 minutes ago
 
 ### Until
-30: in a few seconds
-60: in less than a minute
-120: in a minute
-600: in a few minutes
-960: in about 10 minutes
-1500: in about 20 minutes
+- 30s: in a few seconds
+- 60s: in less than a minute
+- 120s: in a minute
+- 600s: in a few minutes
+- 960s: in about 10 minutes
+- 1500s: in about 20 minutes
