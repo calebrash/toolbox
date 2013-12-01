@@ -10,10 +10,10 @@ __Enjoy.__
 
 ## Contents
 
-- [Color Mixer](tree/master/color-mixer): A function for mixing two colors by a certain percentage.
-- [DD](tree/master/dd): A set of functions to help make jQuery faster.
-- [Natural Time](tree/master/naturaltime): A function to represent timestamps in a nice way.
-- [Roman](tree/master/roman): Convert integers to Roman numerals and back.
-- [Runner](tree/master/runner): A simplified version of [Turnstile](https://github.com/calebrash/turnstile) in CoffeeScript.
-- [Strftime](tree/master/strftime): Nice date formatting for JavaScript.
-- [Tic-tac-toe](tree/master/tic-tac-toe): A simple tic tac toe game.
+- [Color Mixer](color-mixer): A function for mixing two colors by a certain percentage.
+- [DD](dd): A set of functions to help make jQuery faster.
+- [Natural Time](naturaltime): A function to represent timestamps in a nice way.
+- [Roman](roman): Convert integers to Roman numerals and back.
+- [Runner](runner): A simplified version of [Turnstile](https://github.com/calebrash/turnstile) in CoffeeScript.
+- [Strftime](strftime): Nice date formatting for JavaScript.
+- [Tic-tac-toe](tic-tac-toe): A simple tic tac toe game.
