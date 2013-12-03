@@ -1,7 +1,5 @@
 # Roman Numerals
 
-## Usage
-
 ```javascript
 // int to roman
 1111.toRoman(); // => "MCXI"

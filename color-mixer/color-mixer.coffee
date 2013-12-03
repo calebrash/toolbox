@@ -20,9 +20,9 @@ toRgb = (hexColor) ->
 
 # convert rgb values to hex color
 toHex = (rgbColor) ->
-    r = rgbColor.r.toString(16)
-    g = rgbColor.g.toString(16)
-    b = rgbColor.b.toString(16)
+    r = rgbColor.r.toString 16
+    g = rgbColor.g.toString 16
+    b = rgbColor.b.toString 16
 
     # prepend 0 if only one digit
     if r.length is 1 then r = "0#{r}"
