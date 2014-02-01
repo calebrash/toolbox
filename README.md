@@ -17,3 +17,4 @@ __Enjoy.__
 - [Runner](runner): A simplified version of [Turnstile](https://github.com/calebrash/turnstile) in CoffeeScript.
 - [Strftime](strftime): Nice date formatting for JavaScript.
 - [Tic-tac-toe](tic-tac-toe): A simple tic tac toe game.
+- [Snowflake](snowflake): A controller for a single "snowflake"
