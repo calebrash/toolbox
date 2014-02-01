@@ -1,9 +1,12 @@
+randRange = (a, b) ->
+  ~~(Math.random() * (b - a + 1)) + a
+
 class Snowflake
-  constructor: () ->
+  constructor: (position, timing, size) ->
     @speed = [0, 0]
-    @position = [-10, randRange 0, 800]
-    @timing = randRange 50, 200
-    size = randRange 3, 8
+    @position = position
+    @timing = timing
+    size = size
     @element = document.createElement "div"
     @element.setAttribute "class", "flake"
     @element.style.width = "#{size}px"
@@ -13,7 +16,7 @@ class Snowflake
     @destructed = no
   setSpeed: () ->
     @speed[0] = randRange -1, 4
-    @speed[1] = randRange -2, 3
+    @speed[1] = randRange -2, 2
   setPosition: () ->
     if @position[0] > 400 then @destruct()
     if @destructed then return
