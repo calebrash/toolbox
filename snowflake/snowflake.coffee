@@ -34,3 +34,6 @@ class Snowflake
     @destructed = yes
     clearInterval @interval
     @onDestruct()
+
+window.randRange = randRange
+window.Snowflake = Snowflake

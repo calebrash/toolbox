@@ -4,14 +4,14 @@ module.exports = (grunt) ->
 
     coffee:
       default:
-        options:
-          bare: yes
+        options: {}
         files:
           "snowflake/app.js": ["snowflake/*.coffee"]
+          "color-mixer/app.js": ["color-mixer/*.coffee"]
 
     watch:
       default:
-        files: ["snowflake/*.coffee"]
+        files: ["snowflake/*.coffee", "color-mixer/*.coffee"]
         tasks: ["coffee"]
 
   grunt.initConfig config
