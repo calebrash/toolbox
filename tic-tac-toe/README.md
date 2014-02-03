@@ -1,3 +1,3 @@
 # Tic Tac Toe
 
-Modified example on [CodePen](http://codepen.io/calebrash/pen/AzrJv).
+[View the live demo.](http://calebrash.github.io/toolbox/tic-tac-toe/)

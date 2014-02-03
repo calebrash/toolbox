@@ -9,4 +9,4 @@ mix("#000", "#fff", 0.75); // => #bfbfbf, 0.75 leans toward #fff
 mix("#123456", "#abcdef"); // => #5f81a3 
 ```
 
-[Live example (codepen)](http://codepen.io/calebrash/pen/kECsI)
+[Live example](http://calebrash.github.io/toolbox/color-mixer/)
