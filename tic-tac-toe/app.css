@@ -1,0 +1,108 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+header {
+    width: 200px;
+    margin: 8% auto 18px auto;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+h1 {
+    margin: 0 0 3px 0;
+    font-size: 1.1em;
+    line-height: 1.2em;
+}
+
+h2 {
+    margin: 0;
+    font-size: 0.9em;
+    line-height: 1.2em;
+    font-weight: normal;
+}
+
+h2 a {
+    color: #333;
+    text-decoration: none;
+}
+
+h2 a:hover {
+    color: #666;
+    text-decoration: underline;
+}
+
+h2 span {
+  color: #ccc;
+}
+
+#game {
+    width: 165px;
+    margin: 0 auto;
+}
+
+#game a {
+    display: block;
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 0 5px 5px 0;
+    padding-top: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 2.0em;
+    font-weight: 100;
+    text-decoration: none;
+    color: #999;
+    overflow: hidden;
+}
+
+#game a:hover {
+    border-color: #999;
+}
+
+#game a .x {
+    margin-top: -40px;
+}
+
+#game a .o {
+    margin-top: 40px;
+}
+
+#game span {
+    display: block;
+    width: 100%;
+}
+
+#game .tile-X .x {
+    margin-top: 0;
+}
+
+#game .tile-O .o {
+    margin-top: 2px;
+}
+
+#game .msg {
+    display: none;
+    float: left;
+    clear: left;
+    width: 100%;
+    margin: -110px 0 0 -15px;
+    padding: 15px;
+    background: #eee;
+    background: rgba(0,0,0,0.1);
+    text-align: center;
+    font-weight: 200;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#game.done a {
+    opacity: 0.2;
+}
+
+#game.done .msg {
+    display: block;
+}

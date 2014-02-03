@@ -1,5 +1,5 @@
-container = document.getElementById "game"
-game = new TicTacToe()
+container = null
+game = null
 
 render = () ->
   html = ""
@@ -35,11 +35,7 @@ events = () ->
       game.setMove data.x, data.y
       render()
 
-render()
-
-
-
-
-
-
-
+window.addEventListener "DOMContentLoaded", ->
+  container = document.getElementById "game"
+  game = new TicTacToe()
+  render()

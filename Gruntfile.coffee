@@ -8,10 +8,11 @@ module.exports = (grunt) ->
         files:
           "snowflake/app.js": ["snowflake/*.coffee"]
           "color-mixer/app.js": ["color-mixer/*.coffee"]
+          "tic-tac-toe/app.js": ["tic-tac-toe/*.coffee"]
 
     watch:
       default:
-        files: ["snowflake/*.coffee", "color-mixer/*.coffee"]
+        files: ["snowflake/*.coffee", "color-mixer/*.coffee", "tic-tac-toe/*.coffee"]
         tasks: ["coffee"]
 
   grunt.initConfig config
