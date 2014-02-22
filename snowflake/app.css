@@ -17,7 +17,9 @@ header {
   border-bottom: 1px solid #aaa;
   background: rgba(255,255,255,0.7);
   z-index: 50;
-  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+   -ms-box-sizing: border-box;
+       box-sizing: border-box;
 }
 
 h1 {

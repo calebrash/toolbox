@@ -50,7 +50,6 @@ h2 span {
     margin: 0 5px 5px 0;
     padding-top: 5px;
     border: 1px solid #ccc;
-    box-sizing: border-box;
     border-radius: 25px;
     text-align: center;
     font-size: 2.0em;
@@ -58,6 +57,9 @@ h2 span {
     text-decoration: none;
     color: #999;
     overflow: hidden;
+    -moz-box-sizing: border-box;
+     -ms-box-sizing: border-box;
+         box-sizing: border-box;
 }
 
 #game a:hover {
