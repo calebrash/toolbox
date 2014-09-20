@@ -18,3 +18,5 @@ __Enjoy.__
 - [Strftime](strftime): Nice date formatting for JavaScript.
 - [Tic-tac-toe](tic-tac-toe): A simple tic tac toe game.
 - [Snowflake](snowflake): A controller for a single "snowflake"
+- [Flatten](flatten): Flatten a JS object and attach it to a context
+- [strformat](strformat): Classic string interpolation for JavaScript
