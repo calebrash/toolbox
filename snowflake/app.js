@@ -1,5 +1,5 @@
 (function() {
-  var attachEvents, calculatePercentageForRange, canvas, createFlake, currentFlakeRate, currentFlakeSize, flakeRateInterval, flakeRateRange, flakeSizeRange, onReady, rateInput, rateInputChangeHandler, setCurrentFlakeRate, setCurrentFlakeSize, sizeInput, sizeInputChangeHandler, startFlakeRateInterval;
+  var attachEvents, calculatePercentageForRange, canvas, createFlake, currentFlakeRate, currentFlakeSize, flakeRateInterval, flakeRateRange, flakeSizeRange, rateInput, rateInputChangeHandler, setCurrentFlakeRate, setCurrentFlakeSize, sizeInput, sizeInputChangeHandler, startFlakeRateInterval;
 
   canvas = null;
 
@@ -73,7 +73,7 @@
     return rateInput.addEventListener("change", rateInputChangeHandler);
   };
 
-  onReady = function() {
+  window.addEventListener("DOMContentLoaded", function() {
     canvas = document.getElementById("canvas");
     sizeInput = document.getElementById("size-input");
     rateInput = document.getElementById("rate-input");
@@ -81,9 +81,7 @@
     setCurrentFlakeRate();
     attachEvents();
     return startFlakeRateInterval();
-  };
-
-  window.addEventListener("DOMContentLoaded", onReady);
+  });
 
 }).call(this);
 
@@ -115,7 +113,10 @@
     };
 
     Snowflake.prototype.setPosition = function() {
-      if (this.position[0] > 400) {
+      if (this.maxHeight === null) {
+        this.maxHeight = this.element.parentElement.clientHeight || 500;
+      }
+      if (this.position[0] > this.maxHeight) {
         this.destruct();
       }
       if (this.destructed) {

@@ -14,22 +14,29 @@ class Snowflake
     @setSpeed()
     @setPosition()
     @destructed = no
+  
   setSpeed: () ->
     @speed[0] = randRange -1, 4
     @speed[1] = randRange -2, 2
+  
   setPosition: () ->
-    if @position[0] > 400 then @destruct()
+    if @maxHeight is null
+      @maxHeight = @element.parentElement.clientHeight or 500;
+    if @position[0] > @maxHeight then @destruct()
     if @destructed then return
     @position[0] = @position[0] + @speed[0]
     @position[1] = @position[1] + @speed[1]
     @element.style.top = "#{@position[0]}px"
     @element.style.left = "#{@position[1]}px"
+  
   animate: () ->
     @interval = setInterval =>
       @setSpeed()
       @setPosition()
     , @timing
+  
   onDestruct: () -> # user defined
+  
   destruct: () ->
     @destructed = yes
     clearInterval @interval

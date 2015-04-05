@@ -4,7 +4,6 @@ body {
   color: #333;
 }
 
-
 /* -------------------------------------------------- */
 
 
@@ -79,6 +78,7 @@ input {
   box-shadow: 0 0 5px #fff;
   border-radius: 50%;
   transition: top 200ms ease-out, left 200ms ease-out;
+  will-change: top, left;
 }
 
 

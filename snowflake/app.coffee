@@ -60,7 +60,10 @@ attachEvents = ->
   sizeInput.addEventListener "change", sizeInputChangeHandler
   rateInput.addEventListener "change", rateInputChangeHandler
 
-onReady = ->
+
+# --------------------------------------------------
+
+window.addEventListener "DOMContentLoaded", () ->
   canvas = document.getElementById "canvas"
   sizeInput = document.getElementById "size-input"
   rateInput = document.getElementById "rate-input"
@@ -69,10 +72,4 @@ onReady = ->
   attachEvents()
   startFlakeRateInterval()
 
-
-
-
-# --------------------------------------------------
-
-window.addEventListener "DOMContentLoaded", onReady
 

@@ -72,11 +72,6 @@
 }).call(this);
 
 (function() {
-
-
-}).call(this);
-
-(function() {
   var TicTacToe, Tile, gamestatus, tilestatus;
 
   tilestatus = {
