@@ -51,3 +51,4 @@ mix = (color1, color2, amount=0.5) ->
          b: diff color1.b, color2.b, amount
     toHex color3
 
+window.mix = mix

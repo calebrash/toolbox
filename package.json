@@ -1,0 +1,21 @@
+{
+  "name": "toolbox",
+  "version": "0.0.0",
+  "description": "ERROR: No README.md file found!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/calebrash/toolbox.git"
+  },
+  "author": "",
+  "license": "BSD",
+  "gitHead": "68861cc0fa09554e8b0cb6b63d59f11e367ae858",
+  "dependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-coffee": "~0.9.0",
+    "grunt-contrib-watch": "~0.5.3"
+  }
+}

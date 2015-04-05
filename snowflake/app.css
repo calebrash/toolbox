@@ -1,0 +1,100 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+
+/* -------------------------------------------------- */
+
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 25px 20px 25px;
+  border-bottom: 1px solid #aaa;
+  background: rgba(255,255,255,0.7);
+  z-index: 50;
+  -moz-box-sizing: border-box;
+   -ms-box-sizing: border-box;
+       box-sizing: border-box;
+}
+
+h1 {
+  float: left;
+  margin: 0 25px 0 0;
+  font-size: 1.1em;
+}
+
+h2 {
+  position: absolute;
+  top: 16px;
+  right: 25px;
+  margin: 0;
+  font-size: 1.0em;
+  font-weight: normal;
+}
+
+h2 a {
+  color: #333;
+  text-decoration: none;
+}
+
+h2 a:hover {
+  color: #666;
+}
+
+label {
+  float: left;
+  margin: -3px 20px 0 0;
+  line-height: 1.0em;
+}
+
+input {
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  margin-left: 10px;
+  width: 130px;
+}
+
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #ccc;
+  background-image: linear-gradient(#ccc, #fff);
+  z-index: 20;
+}
+
+.flake {
+  position: absolute;
+  background: #fff;
+  box-shadow: 0 0 5px #fff;
+  border-radius: 50%;
+  transition: top 200ms ease-out, left 200ms ease-out;
+}
+
+
+/* -------------------------------------------------- */
+
+
+@media (max-width: 600px) {
+  header {
+    padding: 10px 10% 15px 10%;
+  }
+  label {
+    display: none;
+  }
+  h2 {
+    position: static;
+    float: left;
+    clear: left;
+  }
+}
